@@ -3,7 +3,7 @@ export default function Home() {
     <>
       <section className="hero">
         <h1>Empowering Minds in Houston's Heart</h1>
-        <p>The Woods Private School is a premier private institution in Houston, TX, dedicated to fostering a love of learning and a strong sense of community. Our experienced faculty and staff provide a nurturing environment that allows students to thrive and reach their full potential.</p>
+        <p>The Woods Private School is a vibrant community of learners in Houston, TX, dedicated to fostering academic excellence and character development. Our experienced faculty and staff provide a nurturing environment that encourages students to grow and thrive.</p>
         <a href="/download" className="cta-btn" style={{ padding: '14px 32px', fontSize: '18px' }}>
           Get the Parent App
         </a>
@@ -26,7 +26,7 @@ export default function Home() {
           <p>Real-time attendance tracking with instant notifications to parents.</p>
         </div>
       </section>
-      <section className="section"><blockquote>"The Woods Private School has been a game-changer for our family, providing a supportive and inclusive community that has allowed our child to thrive and reach their full potential."<cite>— Sarah Thompson</cite></blockquote></section>
+      <section className="section"><blockquote>"The Woods Private School has been a game-changer for our family, providing a supportive and inclusive community that has helped our child thrive academically and personally"<cite>— Sarah Johnson</cite></blockquote></section>
     </>
   );
 }

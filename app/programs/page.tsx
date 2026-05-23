@@ -2,12 +2,11 @@ export default function Programs() {
   return (
     <section className="section">
       <h2>Our Programs</h2>
-      <div class="program-card"><h3>Early Childhood Education</h3><p>Our early childhood program is designed to provide a solid foundation for future academic success, with a focus on play-based learning and socialization.</p></div>
-          <div class="program-card"><h3>Lower School Curriculum</h3><p>Our lower school curriculum is tailored to meet the needs of students in grades K-5, with a focus on core subjects such as reading, writing, mathematics, and science.</p></div>
-          <div class="program-card"><h3>Upper School Electives</h3><p>Our upper school electives offer students in grades 6-12 the opportunity to explore their interests and passions, from arts and humanities to STEM and athletics.</p></div>
-          <div class="program-card"><h3>Summer Enrichment Programs</h3><p>Our summer enrichment programs provide students with a range of engaging and educational activities, from academic workshops to sports camps and arts programs.</p></div>
-          <div class="program-card"><h3>Special Needs Support</h3><p>Our special needs support program is designed to provide individualized support and accommodations for students with unique learning needs, ensuring that every student has the opportunity to succeed.</p></div>
-          <div class="program-card"><h3>College Counseling</h3><p>Our college counseling program provides students with expert guidance and support as they navigate the college application process, from standardized testing to financial aid and scholarship applications.</p></div>
+      <div class="program-card"><h3>Lower School Program</h3><p>Our Lower School Program is designed for students in grades K-5, focusing on building a strong foundation in core subjects and promoting social-emotional growth</p></div>
+          <div class="program-card"><h3>Upper School Program</h3><p>The Upper School Program, serving grades 6-12, offers a rigorous college-preparatory curriculum and a wide range of extracurricular activities</p></div>
+          <div class="program-card"><h3>STEM Education</h3><p>Our STEM program provides students with hands-on experiences in science, technology, engineering, and math, preparing them for careers in these in-demand fields</p></div>
+          <div class="program-card"><h3>Fine Arts Program</h3><p>The Woods Private School offers a comprehensive Fine Arts Program, including music, visual arts, and theater, allowing students to explore their creativity and express themselves</p></div>
+          <div class="program-card"><h3>Athletics and Wellness</h3><p>Our athletics and wellness programs promote physical fitness, teamwork, and healthy lifestyles, with a variety of sports and activities available to students of all ages and skill levels</p></div>
     </section>
   );
 }

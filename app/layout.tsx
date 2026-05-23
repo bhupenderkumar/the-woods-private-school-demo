@@ -3,7 +3,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'The Woods Private School',
-  description: 'The Woods Private School is a premier private institution in Houston, TX, dedicated to fostering a love of learning and a strong sense of community. Our experienced faculty and staff provide a nurturing environment that allows students to thrive and reach their full potential.',
+  description: 'The Woods Private School is a vibrant community of learners in Houston, TX, dedicated to fostering academic excellence and character development. Our experienced faculty and staff provide a nurturing environment that encourages students to grow and thrive.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
