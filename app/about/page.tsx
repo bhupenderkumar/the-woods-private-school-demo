@@ -3,9 +3,9 @@ export default function About() {
     <section className="section">
       <h2>About The Woods Private School</h2>
       <div style={{ lineHeight: 1.8 }}>
-        <p style={{ marginBottom: '16px' }}>The Woods Private School is a private institution in Houston, TX, committed to providing a well-rounded education that prepares students for success in all aspects of life. </p>
-        <p style={{ marginBottom: '16px' }}> Our campus is designed to promote collaboration, creativity, and critical thinking, with state-of-the-art facilities and cutting-edge technology. </p>
-        <p style={{ marginBottom: '16px' }}> The Head of School, along with our talented faculty and staff, work tirelessly to ensure that each student receives a personalized education that meets their unique needs and interests.</p>
+        <p style={{ marginBottom: '16px' }}>The Woods Private School is nestled in a beautiful, natural setting, providing an ideal backdrop for learning and exploration. Our campus is designed to inspire creativity, curiosity, and a love of learning, with state-of-the-art facilities and cutting-edge technology. </p>
+        <p style={{ marginBottom: '16px' }}> We believe that every child is unique, with their own strengths, talents, and interests. Our experienced teachers and staff work closely with each student to develop a personalized learning plan, tailored to their individual needs and goals. </p>
+        <p style={{ marginBottom: '16px' }}> From our rigorous academic programs to our wide range of extracurricular activities, we offer a well-rounded education that prepares students for success in all areas of life.</p>
       </div>
     </section>
   );
