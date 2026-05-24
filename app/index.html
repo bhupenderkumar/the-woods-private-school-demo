@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>The Woods Private School — App Preview</title>
+  <meta name="description" content="See how the The Woods Private School parent &amp; teacher app would look. Homework, attendance, fees, notices — all in one app.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/app/styles.css">
+</head>
+<body>
+  <!-- Top banner -->
+  <div class="demo-banner">
+    <div class="banner-inner">
+      <span>✨ Live preview of the <strong>parent + teacher app</strong> built for <strong>The Woods Private School</strong></span>
+      <a href="mailto:bhupender@myfirststepschool.com" class="banner-cta">Get This For Your School →</a>
+    </div>
+  </div>
+
+  <!-- Hero section -->
+  <div class="hero-section" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)">
+    <div class="hero-content">
+      <div class="hero-logo" style="background:rgba(255,255,255,.15)">T</div>
+      <h1>The Woods Private School</h1>
+      <p class="hero-tagline">Excellence in Education</p>
+      <p class="hero-desc">One app, two experiences — see how parents and teachers interact seamlessly</p>
+      <div class="hero-badges">
+        <span class="hero-badge">📱 Parent App</span>
+        <span class="hero-badge">👩‍🏫 Teacher App</span>
+        <span class="hero-badge">🖥️ Admin Dashboard</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dual Phone Section -->
+  <div class="phones-section">
+    <div class="phones-header">
+      <h2>Two Roles, One Powerful App</h2>
+      <p>Teachers manage classes and post updates. Parents see everything in real-time.</p>
+    </div>
+
+    <div class="phones-container">
+      <!-- TEACHER PHONE -->
+      <div class="phone-wrapper">
+        <div class="phone-label teacher-label">👩‍🏫 Teacher View</div>
+        <div class="phone-frame" id="teacher-phone">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="status-bar">
+              <span class="time">9:41</span>
+              <div class="status-icons"><span>📶</span><span>🔋</span></div>
+            </div>
+
+            <!-- Teacher: Dashboard -->
+            <div class="app-screen active" data-screen="t-dashboard" data-phone="teacher">
+              <div class="screen-hero" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)">
+                <div class="app-name-bar">The Woods</div>
+                <div class="hero-greeting">Good Morning! 👋</div>
+                <div class="hero-student">
+                  <div class="student-avatar">👩‍🏫</div>
+                  <div>
+                    <div class="student-name">Ms. Anita Verma</div>
+                    <div class="student-class">Teacher Portal</div>
+                  </div>
+                </div>
+                <div class="hero-chips">
+                  <div class="glass-chip"><span>🏫</span> 2 Classes</div>
+                  <div class="glass-chip"><span>👥</span> 25 Students</div>
+                </div>
+              </div>
+              <div class="screen-body">
+                <div class="section-label">Quick Actions</div>
+                <div class="quick-actions">
+                  <div class="action-card" data-goto="t-attendance">
+                    <div class="action-icon" style="background:#DCFCE7;color:#16A34A">✓</div>
+                    <span>Mark Attendance</span>
+                  </div>
+                  <div class="action-card" data-goto="t-homework">
+                    <div class="action-icon" style="background:#EEF2FF;color:#6366F1">📝</div>
+                    <span>Post Homework</span>
+                  </div>
+                  <div class="action-card" data-goto="t-notices">
+                    <div class="action-icon" style="background:#FEF3C7;color:#D97706">📢</div>
+                    <span>Send Notice</span>
+                  </div>
+                  <div class="action-card" data-goto="t-students">
+                    <div class="action-icon" style="background:#FCE7F3;color:#DB2777">👥</div>
+                    <span>View Students</span>
+                  </div>
+                </div>
+                <div class="section-label" style="margin-top:16px">Today's Stats</div>
+                <div class="stats-row">
+                  <div class="stat-card"><div class="stat-num" style="color:#16A34A">2/3</div><div class="stat-lbl">Attendance Done</div></div>
+                  <div class="stat-card"><div class="stat-num" style="color:#6366F1">5</div><div class="stat-lbl">HW Posted</div></div>
+                  <div class="stat-card"><div class="stat-num" style="color:#D97706">2</div><div class="stat-lbl">Notices</div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Teacher: Mark Attendance -->
+            <div class="app-screen" data-screen="t-attendance" data-phone="teacher">
+              <div class="screen-hero compact" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)">
+                <div class="app-name-bar">The Woods</div>
+                <div class="screen-title">Mark Attendance</div>
+                <div class="screen-subtitle">Sunday, May 24, 2026</div>
+              </div>
+              <div class="screen-body">
+                <div class="class-selector"><div class="class-chip active">Grade 3-A</div><div class="class-chip">Grade 3-B</div><div class="class-chip">Grade 4-A</div></div>
+                <div class="attendance-toolbar">
+                  <button class="att-btn present-btn">All Present</button>
+                  <button class="att-btn absent-btn">All Absent</button>
+                </div>
+                <div id="teacher-attendance-list" class="card-list"></div>
+              </div>
+            </div>
+
+            <!-- Teacher: Post Homework -->
+            <div class="app-screen" data-screen="t-homework" data-phone="teacher">
+              <div class="screen-hero compact" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)">
+                <div class="app-name-bar">The Woods</div>
+                <div class="screen-title">Homework</div>
+                <div class="screen-subtitle">Post &amp; Manage</div>
+              </div>
+              <div class="screen-body">
+                <div class="form-area">
+                  <div class="form-group"><label class="form-label">Class</label><div class="form-select">Grade 3 — Section A</div></div>
+                  <div class="form-group"><label class="form-label">Subject</label><div class="form-select">Mathematics</div></div>
+                  <div class="form-group"><label class="form-label">Title</label><div class="form-input-demo">Chapter 5 — Fractions Practice</div></div>
+                  <div class="form-group"><label class="form-label">Due Date</label><div class="form-input-demo">Tomorrow</div></div>
+                  <button class="submit-btn" style="background:#6366F1">📤 Post Homework</button>
+                </div>
+                <div class="section-label" style="margin-top:16px">Recently Posted</div>
+                <div id="teacher-hw-list" class="card-list"></div>
+              </div>
+            </div>
+
+            <!-- Teacher: Send Notice -->
+            <div class="app-screen" data-screen="t-notices" data-phone="teacher">
+              <div class="screen-hero compact" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)">
+                <div class="app-name-bar">The Woods</div>
+                <div class="screen-title">Notices</div>
+                <div class="screen-subtitle">Post Announcements</div>
+              </div>
+              <div class="screen-body">
+                <div class="form-area">
+                  <div class="form-group"><label class="form-label">Target</label><div class="class-selector"><div class="class-chip active">All Classes</div><div class="class-chip">3-A</div><div class="class-chip">3-B</div></div></div>
+                  <div class="form-group"><label class="form-label">Title</label><div class="form-input-demo">Annual Day Celebration</div></div>
+                  <div class="form-group"><label class="form-label">Message</label><div class="form-textarea-demo">Our Annual Day will be held on June 15th. All parents are invited.</div></div>
+                  <button class="submit-btn" style="background:#6366F1">📢 Post Notice</button>
+                </div>
+                <div class="section-label" style="margin-top:16px">Recent</div>
+                <div id="teacher-notices-list" class="card-list"></div>
+              </div>
+            </div>
+
+            <!-- Teacher: Students -->
+            <div class="app-screen" data-screen="t-students" data-phone="teacher">
+              <div class="screen-hero compact" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)">
+                <div class="app-name-bar">The Woods</div>
+                <div class="screen-title">Students</div>
+                <div class="screen-subtitle">Class Directory</div>
+              </div>
+              <div class="screen-body">
+                <div class="class-selector"><div class="class-chip active">Grade 3-A</div><div class="class-chip">Grade 3-B</div><div class="class-chip">Grade 4-A</div></div>
+                <div class="search-bar"><span>🔍</span><span class="search-text">Search students...</span></div>
+                <div id="teacher-students-list" class="card-list"></div>
+              </div>
+            </div>
+
+            <div class="tab-bar">
+              <button class="tab active" data-tab="t-dashboard" data-phone="teacher"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>Home</span></button>
+              <button class="tab" data-tab="t-attendance" data-phone="teacher"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg><span>Attendance</span></button>
+              <button class="tab" data-tab="t-homework" data-phone="teacher"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><span>Homework</span></button>
+              <button class="tab" data-tab="t-notices" data-phone="teacher"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg><span>Notices</span></button>
+              <button class="tab" data-tab="t-students" data-phone="teacher"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg><span>Students</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sync indicator -->
+      <div class="sync-arrow">
+        <div class="sync-line"></div>
+        <div class="sync-badge">⚡ Real-time Sync</div>
+        <div class="sync-line"></div>
+      </div>
+
+      <!-- PARENT PHONE -->
+      <div class="phone-wrapper">
+        <div class="phone-label parent-label">👨‍👩‍👧 Parent View</div>
+        <div class="phone-frame" id="parent-phone">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="status-bar">
+              <span class="time">9:41</span>
+              <div class="status-icons"><span>📶</span><span>🔋</span></div>
+            </div>
+
+            <!-- Parent: Home -->
+            <div class="app-screen active" data-screen="p-home" data-phone="parent">
+              <div class="screen-hero" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)">
+                <div class="app-name-bar">The Woods</div>
+                <div class="hero-greeting">Good Morning! 👋</div>
+                <div class="hero-student">
+                  <div class="student-avatar">E</div>
+                  <div><div class="student-name">Emily Wilson</div><div class="student-class">Grade 5 — Section B</div></div>
+                </div>
+                <div class="hero-chips">
+                  <div class="glass-chip"><span>📚</span> 4 Due</div>
+                  <div class="glass-chip"><span>📅</span> 92% Present</div>
+                </div>
+              </div>
+              <div class="screen-body">
+                <div class="section-label">Today's Homework</div>
+                <div id="homework-list" class="card-list"></div>
+                <div class="section-label" style="margin-top:16px">Recent Classwork</div>
+                <div id="classwork-list" class="card-list"></div>
+              </div>
+            </div>
+
+            <!-- Parent: Attendance -->
+            <div class="app-screen" data-screen="p-attendance" data-phone="parent">
+              <div class="screen-hero compact" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)">
+                <div class="app-name-bar">The Woods</div>
+                <div class="screen-title">Attendance</div>
+                <div class="screen-subtitle">May Summary</div>
+              </div>
+              <div class="screen-body">
+                <div class="attendance-ring-area"><div class="ring-container"><svg class="progress-ring" viewBox="0 0 120 120"><circle class="ring-bg" cx="60" cy="60" r="52"/><circle class="ring-progress" cx="60" cy="60" r="52" stroke="#6366F1" stroke-dasharray="326.7" stroke-dashoffset="26"/></svg><div class="ring-label">92%</div></div></div>
+                <div class="attendance-stats">
+                  <div class="att-stat present"><div class="att-num">22</div><div class="att-label">Present</div></div>
+                  <div class="att-stat absent"><div class="att-num">2</div><div class="att-label">Absent</div></div>
+                  <div class="att-stat other"><div class="att-num">4</div><div class="att-label">Holiday</div></div>
+                </div>
+                <div class="section-label">Recent Absences</div>
+                <div id="absences-list" class="card-list"></div>
+              </div>
+            </div>
+
+            <!-- Parent: Fees -->
+            <div class="app-screen" data-screen="p-fees" data-phone="parent">
+              <div class="screen-hero compact" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)">
+                <div class="app-name-bar">The Woods</div>
+                <div class="screen-title">Fees</div>
+                <div class="screen-subtitle">Payment Summary</div>
+              </div>
+              <div class="screen-body">
+                <div class="fee-summary"><div class="fee-total"><div class="fee-amount">$2,500</div><div class="fee-label">Total This Term</div></div><div class="fee-chips"><div class="fee-chip paid"><span>✓</span> <span>2</span> Paid</div><div class="fee-chip pending"><span>!</span> <span>2</span> Pending</div></div></div>
+                <div class="section-label">Fee Details</div>
+                <div id="fees-list" class="card-list"></div>
+              </div>
+            </div>
+
+            <!-- Parent: Notices -->
+            <div class="app-screen" data-screen="p-notices" data-phone="parent">
+              <div class="screen-hero compact" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)">
+                <div class="app-name-bar">The Woods</div>
+                <div class="screen-title">Notices</div>
+                <div class="screen-subtitle">School Announcements</div>
+              </div>
+              <div class="screen-body"><div id="notices-list" class="card-list"></div></div>
+            </div>
+
+            <!-- Parent: Profile -->
+            <div class="app-screen" data-screen="p-profile" data-phone="parent">
+              <div class="screen-hero compact" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)">
+                <div class="app-name-bar">The Woods</div>
+                <div class="screen-title">Profile</div>
+                <div class="screen-subtitle">Student Information</div>
+              </div>
+              <div class="screen-body">
+                <div class="profile-header"><div class="profile-avatar" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)">E</div><div class="profile-name">Emily Wilson</div><div class="profile-class">Grade 5 — Section B · Roll No. 12</div></div>
+                <div class="profile-details">
+                  <div class="profile-row"><span class="profile-icon">🏫</span><div><div class="pd-label">School</div><div class="pd-value">The Woods Private School</div></div></div>
+                  <div class="profile-row"><span class="profile-icon">👨‍👩‍👧</span><div><div class="pd-label">Parent</div><div class="pd-value">John Wilson</div></div></div>
+                  <div class="profile-row"><span class="profile-icon">📞</span><div><div class="pd-label">Contact</div><div class="pd-value">713-123-4567</div></div></div>
+                  <div class="profile-row"><span class="profile-icon">📧</span><div><div class="pd-label">Email</div><div class="pd-value">johnwilson@example.com</div></div></div>
+                  <div class="profile-row"><span class="profile-icon">🩸</span><div><div class="pd-label">Blood Group</div><div class="pd-value">O+</div></div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-bar">
+              <button class="tab active" data-tab="p-home" data-phone="parent"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>Home</span></button>
+              <button class="tab" data-tab="p-attendance" data-phone="parent"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>Attendance</span></button>
+              <button class="tab" data-tab="p-fees" data-phone="parent"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg><span>Fees</span></button>
+              <button class="tab" data-tab="p-notices" data-phone="parent"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg><span>Notices</span></button>
+              <button class="tab" data-tab="p-profile" data-phone="parent"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Profile</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <div class="features-section">
+    <div class="features-inner">
+      <h2>Everything Your School Needs</h2>
+      <div class="features-grid">
+        <div class="feat-card"><div class="feat-icon">📱</div><h3>Parent Mobile App</h3><p>Parents see homework, attendance, fees, and notices instantly</p></div>
+        <div class="feat-card"><div class="feat-icon">👩‍🏫</div><h3>Teacher Dashboard</h3><p>Teachers mark attendance, post homework, send notices</p></div>
+        <div class="feat-card"><div class="feat-icon">🖥️</div><h3>Admin Panel</h3><p>School admin manages students, classes, fees, reports</p></div>
+        <div class="feat-card"><div class="feat-icon">🔔</div><h3>Push Notifications</h3><p>Instant alerts for homework, attendance, and notices</p></div>
+        <div class="feat-card"><div class="feat-icon">💳</div><h3>Online Fee Payment</h3><p>Pay fees online via UPI, cards, or net banking</p></div>
+        <div class="feat-card"><div class="feat-icon">📊</div><h3>Reports &amp; Analytics</h3><p>Track attendance trends, fees, and student progress</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pricing -->
+  <div class="pricing-section" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)">
+    <div class="pricing-inner">
+      <h2>Complete Package</h2>
+      <div class="pricing-price">$99<span>/month</span></div>
+      <p class="pricing-sub">Website + Mobile App + Admin Dashboard</p>
+      <div class="pricing-features"><span>✓ 30-day free trial</span><span>✓ No setup fee</span><span>✓ Unlimited parents</span><span>✓ Custom branding</span><span>✓ Play Store listing</span><span>✓ Dedicated support</span></div>
+      <a href="mailto:bhupender@myfirststepschool.com?subject=Demo%20for%20the-woods-private-school" class="cta-button-lg">Schedule a Demo Call →</a>
+      <p class="pricing-phone">or call <a href="tel:+919717267473">+91-9717267473</a></p>
+    </div>
+  </div>
+
+  <footer class="demo-footer">
+    <div class="footer-inner">
+      <p>Built by <strong>SchoolSync Global</strong> · Website + App + Dashboard for schools</p>
+      <p><a href="mailto:bhupender@myfirststepschool.com">bhupender@myfirststepschool.com</a> · <a href="tel:+919717267473">+91-9717267473</a></p>
+    </div>
+  </footer>
+
+  <script>window.__SCHOOL_CONFIG__ = {"homework":[{"subject":"Math","title":"Multiplication Tables - 2x, 5x","due":"Tomorrow","status":"pending"},{"subject":"Science","title":"Experiment 3 - States of Matter","due":"May 27th","status":"overdue"},{"subject":"English","title":"Reading Comprehension - Chapter 8","due":"May 29th","status":"pending"},{"subject":"Social Studies","title":"Map Skills - Continents and Oceans","due":"May 31st","status":"pending"}],"classwork":[{"subject":"Math","title":"Addition and Subtraction Facts","date":"Today"},{"subject":"Science","title":"Introduction to Plants and Photosynthesis","date":"Yesterday"},{"subject":"English","title":"Reading Comprehension - Chapter 6","date":"Yesterday"}],"absences":[{"date":"2024-05-15","reason":"Illness","status":"approved"},{"date":"2024-05-20","reason":"Family Vacation","status":"approved"}],"fees":[{"type":"Tuition","amount":"$1,500","due":"May 31st","status":"Paid"},{"type":"Activity Fee","amount":"$200","due":"June 15th","status":"Pending"},{"type":"Transport Fee","amount":"$500","due":"May 31st","status":"Paid"},{"type":"Books Fee","amount":"$300","due":"June 15th","status":"Pending"}],"notices":[{"title":"School Event - June 1st","body":"Join us for our annual school event, where we will have games, food, and fun for the whole family.","date":"2024-05-20"},{"title":"Summer Camp Registration - Now Open","body":"Registration is now open for our summer camp program, with a variety of exciting activities and games.","date":"2024-05-22"},{"title":"Parent Volunteer Opportunities","body":"We are looking for parent volunteers to help with various school events and activities.","date":"2024-05-24"},{"title":"Student Council Election","body":"The student council election will take place on June 1st. Make sure to vote for your favorite candidate.","date":"2024-05-26"}],"teacher":{"students":[{"name":"Emily Wilson","roll":1,"parent":"John Wilson","color":"#8bc34a","textColor":"#000"},{"name":"Oliver Brown","roll":1,"parent":"Jane Brown","color":"#ffc107","textColor":"#000"},{"name":"Ava Davis","roll":1,"parent":"Mike Davis","color":"#9c27b0","textColor":"#fff"},{"name":"Liam Reed","roll":1,"parent":"Sarah Reed","color":"#4caf50","textColor":"#fff"},{"name":"Isabella Martin","roll":1,"parent":"Tom Martin","color":"#03a9f4","textColor":"#fff"},{"name":"Ethan Hall","roll":1,"parent":"Lily Hall","color":"#ff9800","textColor":"#fff"},{"name":"Sophia Garcia","roll":1,"parent":"David Garcia","color":"#795548","textColor":"#fff"},{"name":"Mason Lee","roll":1,"parent":"Emily Lee","color":"#9c27b0","textColor":"#fff"},{"name":"Charlotte Kim","roll":1,"parent":"Kevin Kim","color":"#9c27b0","textColor":"#fff"},{"name":"Jackson White","roll":1,"parent":"Lisa White","color":"#8bc34a","textColor":"#fff"}],"recentHomework":[{"subject":"Math","title":"Chapter 5 - Word Problems","class":"Grade 5","date":"2024-05-20"},{"subject":"Science","title":"Experiment 2 - Plants and Photosynthesis","class":"Grade 5","date":"2024-05-22"},{"subject":"English","title":"Reading Comprehension - Chapter 7","class":"Grade 5","date":"2024-05-24"}],"recentNotices":[{"title":"School Closure - May 25th","target":"All Students","date":"2024-05-20"},{"title":"Parent-Teacher Conference - June 1st","target":"All Parents","date":"2024-05-22"}]}};</script>
+  <script src="/app/app.js"></script>
+</body>
+</html>
